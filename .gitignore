@@ -1,1 +1,5 @@
 target/
+airflow/logs/
+.user.yml
+__pycache__/
+*.pyc
