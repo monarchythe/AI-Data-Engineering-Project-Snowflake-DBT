@@ -3,3 +3,8 @@ airflow/logs/
 .user.yml
 __pycache__/
 *.pyc
+*.env
+.env
+ai/.env
+*.parquet
+.venv
