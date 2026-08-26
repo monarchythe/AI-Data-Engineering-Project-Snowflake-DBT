@@ -1,1 +1,6 @@
 .venv/
+*.parquet
+*.env
+.env
+ai/.env
+*.parquet
