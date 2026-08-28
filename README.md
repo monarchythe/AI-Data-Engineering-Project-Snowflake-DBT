@@ -10,7 +10,8 @@ The dataset lands in an S3 data lake and flows into Snowflake through a storage 
 
 <img width="1672" height="941" alt="architecture_ai_data_engineerinng-project" src="https://github.com/user-attachments/assets/0d34e6ed-18ae-4be9-8c06-862574727cbd" />
 
-## 📂**Dataset:** [Google Drive folder](https://drive.google.com/drive/folders/1vCXTLNUELPkUyQbvboMx7gq7osTzevjs?usp=sharing) — the zip files with data.zip and data2.zip have all the 10+ million rows data (they're too large to commit to the repo).
+## 📂**Dataset:** 
+[Google Drive folder](https://drive.google.com/drive/folders/1vCXTLNUELPkUyQbvboMx7gq7osTzevjs?usp=sharing) — the zip files with data.zip and data2.zip have all the 10+ million rows data (they're too large to commit to the repo).
 
 ---
 
