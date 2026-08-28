@@ -1,4 +1,4 @@
-# Zomato AI Data Engineering — End-to-End Project
+# Zomato AI Data Engineering, End-to-End Project
 
 A complete batch data pipeline that takes Zomato-style food delivery data from raw CSVs all the way to AI-powered analytics:
 
