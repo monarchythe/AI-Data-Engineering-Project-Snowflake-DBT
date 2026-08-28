@@ -58,7 +58,6 @@ Python · Pandas · Amazon S3 · Snowflake · dbt (dbt-snowflake) · Apache Airf
 │   ├── 04_raw_tables.sql     #   RAW (Bronze) table DDL, column order matches the CSVs
 │   └── 05_copy_into.sql      #   COPY INTO RAW from the stage
 ├── aws/iam/                  # IAM policy + role trust policies for the S3 ↔ Snowflake handshake
-└── docs/architecture.png     # architecture diagram
 ```
 
 > `data/` (~2.3 GB of CSVs), `logs/`, and dbt `target/` artifacts are intentionally not committed
