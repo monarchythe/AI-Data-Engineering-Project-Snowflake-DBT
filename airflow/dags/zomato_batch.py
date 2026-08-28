@@ -38,11 +38,24 @@ with DAG(
     # Task 2: Run dbt models
     dbt_build_code = BashOperator(
         task_id = "dbt_build_code",
-        bash_command = f"{DBT} build --project-dir {DBT_PROJECT} --profiles-dir {DBT_PROJECT}",
+        bash_command = f"{DBT} build --exclude tag:ai --project-dir {DBT_PROJECT} --profiles-dir {DBT_PROJECT}",
 
     )
 
-    reload_raw >> dbt_build_code
+    #Task 3: AI enrichment Layer of reviews
+    enrich_reviews = BashOperator(
+        task_id ="enrich_reviews",
+        bash_command = f"python /opt/airflow/ai/enrich_reviews.py",
+    )
+
+    #Task 4: AI chat bot dbt build
+    dbt_build_ai = BashOperator(
+        task_id = "dbt_build_ai",
+        bash_command = f"{DBT} build --select tag:ai --project-dir {DBT_PROJECT} --profiles-dir {DBT_PROJECT}"
+    )
+    
+
+    reload_raw >> dbt_build_code >> enrich_reviews >> dbt_build_ai
 
 
 
